@@ -1,0 +1,103 @@
+.wrapper{
+    background: $primary-color;
+    width: 5rem;
+    height: 100vh;
+    @include flex;
+    align-items: center;
+    justify-items: center;
+    padding: 3rem 1rem;
+
+    &__logo{
+        padding-bottom: 1rem;
+    }
+
+    &__icons{
+        @include flex;
+
+        a{
+            @include padding-top;
+        }
+    }
+
+    &__logout{
+        padding-top: 20rem;
+    }
+}
+
+.sidebar{
+    padding-top: 3rem;
+    background: #ffffff;
+
+    &__head{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding-bottom: 1.4rem;
+       padding-left: 30px;
+       
+       img{
+           width: 30px;
+           margin-right: 20px;
+       }
+    }
+
+    &__flex{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        padding-top: 1.5rem;
+       
+        img{
+            padding-left: 30px;
+            padding-right: 20px;
+            box-sizing: unset;
+            width: 20px;
+        }
+        .arrow{
+            margin-left: auto;
+            @include transition;
+            cursor: pointer;
+        }
+        p{
+            padding-bottom: 2px;
+            @include font;
+            cursor: pointer;
+        }
+    }
+
+    .dropDownContainer{
+        &.open{
+            .arrow{
+                transform: rotate(90deg);
+            }
+            //
+            .sidebar__dropdown{
+                //open the drop down...
+                max-height: 600px;
+            }
+        }
+    }
+    &__dropdown{
+        font-size: 13px;
+        @include font;
+       transition: 1s ease-in-out;
+        //default state...closed
+        max-height: 0px;
+        overflow: hidden;
+        
+        
+        p{
+            @include padding-top;
+            padding-left: 85px;
+            color: #868686;
+            cursor: pointer;
+           
+            &:last-of-type{
+                color: #303031;
+            }
+
+            
+        }
+    }
+
+}

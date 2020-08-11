@@ -1,0 +1,68 @@
+.header__container{
+    display: flex;
+    @include container;
+
+    .sub__flex{
+        display: flex;
+        align-items: center;
+       
+    }
+
+    .sub__btn{
+        background: #f0f3f8;
+        width: 500px;
+        padding: 1rem;
+        border-radius: 30px;
+        margin-right: 60px;
+
+        p{
+            color: #868686;
+            padding-left: 5px;
+        }
+        
+    }
+
+    .sub__date{
+        margin-top: 1.5rem;
+        
+
+        img{
+            width: 20px;
+            margin-right: 1.5rem;
+        }
+
+        p{
+            margin-right: 6rem;
+            @include font2;
+        }
+    }
+
+    .sub__profile{
+        // margin-top: .1rem;
+        
+
+        .icon{
+            width: 20px;
+            margin-right: 2rem;
+        }
+
+        .picture{
+           width: 70px;
+           margin-right: .5rem;
+        }
+
+        p{
+            @include font2;
+            margin-right: .5rem;
+        }
+
+        .arrow{
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.sub__header{
+    @include container;
+}
+

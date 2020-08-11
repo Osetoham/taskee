@@ -1,0 +1,50 @@
+$primary-color: #3744BD;
+$secondary-color: #fddfa6;
+$extra-color: #eceff5;
+$background-color: #f9fafc;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@mixin padding-top {
+    padding-top: 2rem;
+}
+
+@mixin font {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+@mixin font2{
+    font-size: 18px;
+    
+}
+
+@mixin transition {
+    transition: all 0.5s ease;
+}
+
+@mixin container {
+    max-width: 1150px;
+    margin: 2rem auto;
+    background: red;
+}
+
