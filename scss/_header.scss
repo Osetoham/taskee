@@ -121,32 +121,34 @@
         margin-right: 45px;
         
         p{
-        @include font;
-        font-weight: normal;
+            @include font;
+            font-weight: normal;
 
-        &{
-            a{
-                color:#303031;
+            &{
+                a{
+                    color:#303031;
+                 }
             }
-        }
-        :last-of-type{
-            // margin-right: 3px;
-        }
+            :last-of-type{
+                 // margin-right: 3px;
+            }
 
             ::before{
-            content: "";
-            width: 7px;
-            height: 8px;
-            background:  $primary-color;
-            display: inline-block;
-            text-align: center;
-            border-radius: 50%;
-            margin-bottom: .5px;
-            margin-right: 10px;
-            margin-left: 70px;
+                content: "";
+                width: 7px;
+                height: 8px;
+                background:  $primary-color;
+                display: inline-block;
+                text-align: center;
+                border-radius: 50%;
+                margin-bottom: .5px;
+                margin-right: 10px;
+                margin-left: 70px;
 
-            
-         }
+                :last-of-type{
+                    background: green;
+                }
+            }
 
          
 

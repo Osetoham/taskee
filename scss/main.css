@@ -313,6 +313,10 @@
   margin-left: 70px;
 }
 
+.sub-header .category p ::before :last-of-type {
+  background: green;
+}
+
 body {
   background: #f9fafc;
   color: #303031;
