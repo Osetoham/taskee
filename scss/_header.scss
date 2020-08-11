@@ -2,6 +2,10 @@
     display: flex;
     @include container;
 
+    .header__flex{
+        padding-top: 2.5rem;
+    }
+
     .sub__flex{
         @include sub-flex;  
     }
@@ -9,9 +13,11 @@
     .sub__btn{
         background: #f0f3f8;
         width: 500px;
+        height: 50px;
         padding: 1.45rem;
         border-radius: 80px;
         margin-right: 60px;
+        align-items: center;
 
         p{
             color: #868686;
@@ -21,7 +27,7 @@
     }
 
     .sub__date{
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         margin-left: 15px;
         
 
@@ -37,7 +43,6 @@
     }
 
     .sub__profile{
-        margin-top: .3rem;
         margin-left: 3rem;
 
         .icon{
@@ -68,6 +73,7 @@
     // background-color: red;
     justify-content: space-between;
     align-items: center;
+    margin-top: 3rem;
 
     .sub__flex{
         @include sub-flex;  
@@ -133,9 +139,37 @@
                  // margin-right: 3px;
             }
 
+            // ::before{
+            //     content: "";
+            //     width: 7px;
+            //     height: 8px;
+            //     background:  $primary-color;
+            //     display: inline-block;
+            //     text-align: center;
+            //     border-radius: 50%;
+            //     margin-bottom: .5px;
+            //     margin-right: 10px;
+            //     margin-left: 70px;
+
+            //     :nth-last-of-type(){
+            //         background: green;
+            //     }
+
+                
+            // }
+
+
+
+         
+
+         
+
+        }     
+        
+        .cat-1{
             ::before{
-                content: "";
-                width: 7px;
+                content: '';
+                width: 8px;
                 height: 8px;
                 background:  $primary-color;
                 display: inline-block;
@@ -144,16 +178,41 @@
                 margin-bottom: .5px;
                 margin-right: 10px;
                 margin-left: 70px;
-                :nth-last-of-type()
 
-                
             }
+        }
 
-         
+        .cat-2{
+            ::before{
+                content: '';
+                width: 8px;
+                height: 8px;
+                background:  $secondary-color;
+                display: inline-block;
+                text-align: center;
+                border-radius: 50%;
+                margin-bottom: .5px;
+                margin-right: 10px;
+                margin-left: 70px;
 
-         
+            }
+        }
 
-        }        
+        .cat-3{
+            ::before{
+                content: '';
+                width: 8px;
+                height: 8px;
+                background: #d9e3f5;
+                display: inline-block;
+                text-align: center;
+                border-radius: 50%;
+                margin-bottom: .5px;
+                margin-right: 10px;
+                margin-left: 70px;
+
+            }
+        }
     }
 }
 
