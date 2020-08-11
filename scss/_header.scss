@@ -3,16 +3,14 @@
     @include container;
 
     .sub__flex{
-        display: flex;
-        align-items: center;
-       
+        @include sub-flex;  
     }
 
     .sub__btn{
         background: #f0f3f8;
         width: 500px;
-        padding: 1rem;
-        border-radius: 30px;
+        padding: 1.45rem;
+        border-radius: 80px;
         margin-right: 60px;
 
         p{
@@ -24,30 +22,31 @@
 
     .sub__date{
         margin-top: 1.5rem;
+        margin-left: 15px;
         
 
         img{
-            width: 20px;
+            @include img-width;
             margin-right: 1.5rem;
         }
 
         p{
-            margin-right: 6rem;
+            margin-right: 5rem;
             @include font2;
         }
     }
 
     .sub__profile{
-        // margin-top: .1rem;
-        
+        margin-top: .3rem;
+        margin-left: 3rem;
 
         .icon{
-            width: 20px;
+            @include img-width;
             margin-right: 2rem;
         }
 
         .picture{
-           width: 70px;
+           width: 60px;
            margin-right: .5rem;
         }
 
@@ -58,11 +57,102 @@
 
         .arrow{
             transform: rotate(90deg);
+            
         }
     }
 }
 
-.sub__header{
+.sub-header{
     @include container;
+    display: flex;
+    // background-color: red;
+    justify-content: space-between;
+    align-items: center;
+
+    .sub__flex{
+        @include sub-flex;  
+        transform: translateX(-70px);
+        border: 2px solid #f0f3f8;
+        border-radius: 80px;
+        width: 200px;
+        justify-content: center;
+       
+        
+    }
+
+    &__flex{
+        display: flex;
+
+        
+    }
+
+    &__items{
+        display: flex;
+        
+        img{
+            width: 60px;
+        }
+
+        .img-translate1{
+            transform: translate(-30px, 0);
+        }
+
+        .img-translate2{
+            transform: translate(-60px, 0);
+        }
+
+        .img-translate3{
+            transform: translate(-90px, 0);
+        }
+
+       
+        .icon{
+            width: 20px;
+            margin-right: .5rem; 
+        }
+
+        p{
+           @include font;
+           font-weight: normal;
+        }   
+    }  
+
+    .category{
+        margin-right: 45px;
+        
+        p{
+        @include font;
+        font-weight: normal;
+
+        &{
+            a{
+                color:#303031;
+            }
+        }
+        :last-of-type{
+            // margin-right: 3px;
+        }
+
+            ::before{
+            content: "";
+            width: 7px;
+            height: 8px;
+            background:  $primary-color;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            margin-bottom: .5px;
+            margin-right: 10px;
+            margin-left: 70px;
+
+            
+         }
+
+         
+
+         
+
+        }        
+    }
 }
 
