@@ -415,8 +415,6 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 180px 180px 180px;
-      grid-template-rows: 180px 180px 180px;
   grid-gap: 32px;
   max-width: 1050px;
   margin: 0 auto;
@@ -426,9 +424,9 @@
 .card-grid__background {
   background: #eaebf1;
   width: 100%;
-  height: 100%;
   position: relative;
   border-radius: 5px;
+  margin: 0 0 32px 0;
 }
 
 .card-grid__background .__cards {
@@ -470,7 +468,7 @@
 }
 
 .card-grid__background .__cards__flex .flex-left1 ::before {
-  content: '';
+  content: "";
   width: 7px;
   height: 7px;
   background: #fddfa6;
@@ -491,7 +489,7 @@
 }
 
 .card-grid__background .__cards__flex .flex-left2 ::before {
-  content: '';
+  content: "";
   width: 7px;
   height: 7px;
   background: #d9e3f5;
@@ -512,7 +510,7 @@
 }
 
 .card-grid__background .__cards__flex .flex-left3 ::before {
-  content: '';
+  content: "";
   width: 7px;
   height: 7px;
   background: #fddfa6;
@@ -543,7 +541,7 @@
 
 .card-grid__background .__cards__line {
   width: 100%;
-  height: .4px;
+  height: 0.4px;
   background: #f0f3f8;
 }
 
@@ -555,9 +553,9 @@
 
 .card-grid__background .__cards__line {
   width: 100%;
-  height: .4px;
+  height: 0.4px;
   background: #f0f3f8;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 
 .card-grid__background .__cards__line .line2 {
@@ -568,7 +566,7 @@
 
 .card-grid__background .__cards__line {
   width: 100%;
-  height: .4px;
+  height: 0.4px;
   background: #f0f3f8;
 }
 
@@ -646,13 +644,8 @@
   color: #e8eaec;
 }
 
-.card-grid__background:nth-child(4) {
-  grid-row: span 2;
-  height: 270px;
-}
-
 .card-grid__background:nth-child(4) .flex-left1 ::before {
-  content: '';
+  content: "";
   width: 7px;
   height: 7px;
   background: #3744BD;
@@ -670,7 +663,7 @@
 }
 
 .card-grid__background:nth-child(5) .flex-left2 ::before {
-  content: '';
+  content: "";
   width: 7px;
   height: 7px;
   background: #3744BD;
@@ -688,7 +681,7 @@
 }
 
 .card-grid__background:nth-child(6) .flex-left3 ::before {
-  content: '';
+  content: "";
   width: 7px;
   height: 7px;
   background: #d9e3f5;
