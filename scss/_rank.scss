@@ -1,0 +1,55 @@
+.rank{
+    @include container;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+
+    &__items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+
+        .item{
+            
+           h2{
+               span{
+                   color: #b7bac5;
+                   font-weight: 500;
+                   padding-left: 5px; 
+               }
+           }
+        }
+
+        .new-task{
+            @include sub-flex;
+            @include font;
+            background: #f0f3f8;
+            padding: .7rem;
+            border-radius: 80px;
+            height: 35px;
+            width: 120px;
+            padding-left: 20px;
+            margin-left: 50px;
+            // margin-right: 20px;
+           
+            
+            
+             
+
+            .icon{
+                width: 17px;
+                margin-right: 5px; 
+                margin-bottom: 2px; 
+            }
+
+            p{
+                a{
+                    color:#303031;  
+                }
+            }
+        }
+        
+    }
+}
