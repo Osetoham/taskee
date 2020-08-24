@@ -407,7 +407,7 @@
 }
 
 .rank__items .new-task p a {
-  color: #303031;
+  color: #343435;
 }
 
 .card-grid {
@@ -492,7 +492,7 @@
   content: "";
   width: 7px;
   height: 7px;
-  background: #d9e3f5;
+  background: #3744BD;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -514,6 +514,27 @@
   width: 7px;
   height: 7px;
   background: #fddfa6;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 1.9px;
+  margin-right: 8px;
+}
+
+.card-grid__background .__cards__flex .flex-left4 {
+  font-size: 16px;
+  font-weight: 450;
+}
+
+.card-grid__background .__cards__flex .flex-left4 a {
+  color: #303031;
+}
+
+.card-grid__background .__cards__flex .flex-left4 ::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #d9e3f5;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -559,9 +580,13 @@
 }
 
 .card-grid__background .__cards__line .line2 {
-  width: 69%;
+  width: 30.5%;
   height: 2px;
-  background: #edf0f7;
+  background: #3744BD;
+}
+
+.card-grid__background .__cards__line .line2:even(2) {
+  width: 100%;
 }
 
 .card-grid__background .__cards__line {
@@ -571,9 +596,21 @@
 }
 
 .card-grid__background .__cards__line .line3 {
-  width: 100%;
+  width: 70%;
   height: 2px;
   background: #fddfa6;
+}
+
+.card-grid__background .__cards__line {
+  width: 100%;
+  height: 0.4px;
+  background: #f0f3f8;
+}
+
+.card-grid__background .__cards__line .line4 {
+  width: 63%;
+  height: 2px;
+  background: #edf0f7;
 }
 
 .card-grid__background .__cards__flex {
@@ -612,6 +649,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10px;
 }
 
 .card-grid__background .__cards__flex .dots .dot {
@@ -620,6 +658,11 @@
   border-radius: 50%;
   background: #c7cad2;
   margin-right: 2.5px;
+}
+
+.card-grid__background .__cards__card img {
+  width: 280px;
+  margin-top: 2rem;
 }
 
 .card-grid__background .__cards .days {
@@ -642,60 +685,6 @@
 .card-grid__background .__cards .days p {
   font-size: 12px;
   color: #e8eaec;
-}
-
-.card-grid__background:nth-child(4) .flex-left1 ::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  background: #3744BD;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  margin-bottom: 1.9px;
-  margin-right: 8px;
-}
-
-.card-grid__background:nth-child(4) .line1 {
-  width: 30%;
-  height: 2px;
-  background: #3744BD;
-}
-
-.card-grid__background:nth-child(5) .flex-left2 ::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  background: #3744BD;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  margin-bottom: 1.9px;
-  margin-right: 8px;
-}
-
-.card-grid__background:nth-child(5) .line2 {
-  width: 69%;
-  height: 2px;
-  background: #3744BD;
-}
-
-.card-grid__background:nth-child(6) .flex-left3 ::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  background: #d9e3f5;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  margin-bottom: 1.9px;
-  margin-right: 8px;
-}
-
-.card-grid__background:nth-child(6) .line3 {
-  width: 100%;
-  height: 2px;
-  background: #d9e3f5;
 }
 
 body {

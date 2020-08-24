@@ -59,7 +59,7 @@
             content: "";
             width: 7px;
             height: 7px;
-            background: #d9e3f5;
+            background: $primary-color;
             display: inline-block;
             text-align: center;
             border-radius: 50%;
@@ -80,6 +80,26 @@
             width: 7px;
             height: 7px;
             background: $secondary-color;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            margin-bottom: 1.9px;
+            margin-right: 8px;
+          }
+        }
+
+        .flex-left4 {
+          font-size: 16px;
+          font-weight: 450;
+          a {
+            color: #303031;
+          }
+
+          ::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            background: #d9e3f5;
             display: inline-block;
             text-align: center;
             border-radius: 50%;
@@ -129,10 +149,16 @@
         margin-top: 0.8rem;
 
         .line2 {
-          width: 69%;
+          width: 30.5%;
           height: 2px;
-          background: #edf0f7;
+          background: $primary-color;
+
+          &:even(2){
+            width: 100%;
+          }
         }
+
+        
       }
 
       &__line {
@@ -142,14 +168,28 @@
         // margin-top: .8rem;
 
         .line3 {
-          width: 100%;
+          width: 70%;
           height: 2px;
           background: $secondary-color;
         }
       }
 
+      &__line {
+        width: 100%;
+        height: 0.4px;
+        background: #f0f3f8;
+        // margin-top: .8rem;
+
+        .line4 {
+          width: 63%;
+          height: 2px;
+          background: #edf0f7;
+        }
+      }
+
       &__flex {
         @include sub-flex;
+        
 
         .items {
           img {
@@ -172,6 +212,7 @@
 
         .dots {
           @include sub-flex;
+          margin-top: 10px;
 
           .dot {
             width: 5px;
@@ -179,7 +220,16 @@
             border-radius: 50%;
             background: #c7cad2;
             margin-right: 2.5px;
+            
+           
           }
+        }
+      }
+
+      &__card{
+        img{
+          width: 280px;
+          margin-top: 2rem;
         }
       }
 
@@ -199,75 +249,5 @@
         }
       }
     }
-  }
-
-  &__background:nth-child(4) {
-    .flex-left1 {
-      ::before {
-        content: "";
-        width: 7px;
-        height: 7px;
-        background: $primary-color;
-        display: inline-block;
-        text-align: center;
-        border-radius: 50%;
-        margin-bottom: 1.9px;
-        margin-right: 8px;
-      }
-    }
-
-    .line1 {
-      width: 30%;
-      height: 2px;
-      background: $primary-color;
-    }
-  }
-
-  &__background:nth-child(5) {
-    .flex-left2 {
-      ::before {
-        content: "";
-        width: 7px;
-        height: 7px;
-        background: $primary-color;
-        display: inline-block;
-        text-align: center;
-        border-radius: 50%;
-        margin-bottom: 1.9px;
-        margin-right: 8px;
-      }
-    }
-
-    .line2 {
-      width: 69%;
-      height: 2px;
-      background: $primary-color;
-    }
-  }
-
-  &__background:nth-child(6) {
-    .flex-left3 {
-      ::before {
-        content: "";
-        width: 7px;
-        height: 7px;
-        background: #d9e3f5;
-        display: inline-block;
-        text-align: center;
-        border-radius: 50%;
-        margin-bottom: 1.9px;
-        margin-right: 8px;
-      }
-    }
-
-    .line3 {
-      width: 100%;
-      height: 2px;
-      background: #d9e3f5;
-    }
-
-    // .grab{
-    //     height: 3000px;
-    // }
   }
 }
