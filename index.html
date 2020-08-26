@@ -8,7 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Taskee: to do</title>
+    <link rel="stylesheet" href="./scss/dragula.css">
   </head>
   <body>
     <div class="body__grid">
@@ -98,12 +101,12 @@
       </section>
 
       <!-- 1fr section -->
-      <section class="1fr-section">
+      <section class="1fr-section"data-aos="fade-up">
         <div class="header__container">
           <div class="header__flex">
             <div class="sub__flex sub__btn">
               <img src="img/search.svg" alt="#" />
-              <p>Search</p>
+              <input type="text" placeholder="Search">
             </div>
           </div>
 
@@ -180,7 +183,7 @@
         </div>
 
         <div class="card-grid">
-          <div class="card-grid__col">
+          <div class="card-grid__col js-dragular-container">
             <div class="card-grid__background">
               <div class="__cards">
                 <div class="__cards__flex">
@@ -197,7 +200,7 @@
                 </p>
 
                 <div class="__cards__line">
-                  <div class="line1"></div>
+                  <div class="line1" style=" width: 47%;"></div>
                 </div>
 
                 <div class="__cards__flex">
@@ -251,15 +254,12 @@
                 </div>
 
                 <div class="__cards__line">
-                  <div class="line2"></div>
+                  <div class="line2" style="width: 30.5%;"></div>
                 </div>
 
                 <div class="__cards__flex">
                   <div class="items">
                     <img src="img/Ellipse 1.png" alt="" />
-                    <!-- <img class="img-translate1" src="img/Ellipse 5.png" alt="">
-                                <img class="img-translate2" src="img/Ellipse 3.png" alt="">
-                                <img class="img-translate3" src="img/Ellipse 4.png" alt=""> -->
                   </div>
 
                   <div class="dots">
@@ -320,9 +320,7 @@
               </div>
             </div>
           </div>
-
-          
-          <div class="card-grid__col">
+          <div class="card-grid__col js-dragular-container">
             <div class="card-grid__background">
               <div class="__cards">
                 <div class="__cards__flex">
@@ -457,7 +455,7 @@
             </div>
 
           </div>
-          <div class="card-grid__col">
+          <div class="card-grid__col js-dragular-container">
             <div class="card-grid__background">
               <div class="__cards">
                 <div class="__cards__flex">
@@ -584,6 +582,12 @@
         </div>
       </section>
     </div>
+    <script>
+      AOS.init({
+          duration: 1000
+      })
+  </script>
+    <script src='./js/dragular.js'></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,6 +1,5 @@
 const dropdownButtons = document.querySelectorAll(".js-dropdown");
 
-
 dropdownButtons.forEach((dropDownButton) => {
   let showMenu = false;
 
@@ -15,11 +14,10 @@ dropdownButtons.forEach((dropDownButton) => {
       showMenu = false;
     }
   }
- 
 });
 
+const dragularContainerArray = document.querySelectorAll(
+  ".js-dragular-container"
+);
 
-
-
-
-
+dragula(Array.from(dragularContainerArray));

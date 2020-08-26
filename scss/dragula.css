@@ -1,0 +1,36 @@
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  /* opacity: 0.8; */
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; */
+  /* filter: alpha(opacity=80); */
+  transform: rotate(-10deg);
+  box-shadow: 0 0 10px 5px rgba(82, 82, 82, 0.02);
+}
+.gu-hide {
+  display: none !important;
+}
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  
+}
+.gu-transit {
+  /* opacity: 0.2; */
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; */
+  position: relative;
+  overflow: hidden;
+}
+.gu-transit:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #edeff4;
+  z-index: 1;
+}
